@@ -19,6 +19,16 @@ namespace U4_S1_D5.Models
         private int RedditoAnnuale { get; set; }
         private double Imposta { get; set; }
 
+        public Contribuente(string nome, string cognome, DateTime dataNascita, string codiceFiscale, string sesso, string comuneResidenza, int redditoAnnuale)
+        {
+            Nome = nome;
+            Cognome = cognome;
+            DataNascita = dataNascita;
+            CodiceFiscale = codiceFiscale;
+            Sesso = sesso;
+            ComuneResidenza = comuneResidenza;
+            RedditoAnnuale = redditoAnnuale;
+        }
 
         public double CalcoloImposta(int RedditoAnnuale)
         {
