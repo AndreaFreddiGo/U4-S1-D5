@@ -39,19 +39,19 @@ namespace U4_S1_D5.Models
             }
             else if (RedditoAnnuale <= 28000)
             {
-                return Imposta = RedditoAnnuale * 0.27 + 3450;
+                return Imposta = (RedditoAnnuale - 15000) * 0.27 + 3450;
             }
             else if (RedditoAnnuale <= 55000)
             {
-                return Imposta = RedditoAnnuale * 0.38 + 6960;
+                return Imposta = (RedditoAnnuale - 28000) * 0.38 + 6960;
             }
             else if (RedditoAnnuale <= 75000)
             {
-                return Imposta = RedditoAnnuale * 0.41 + 17220;
+                return Imposta = (RedditoAnnuale - 55000) * 0.41 + 17220;
             }
             else
             {
-                return Imposta = RedditoAnnuale * 0.43 + 25420;
+                return Imposta = (RedditoAnnuale - 75000) * 0.43 + 25420;
             }
         }
     }
